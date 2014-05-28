@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @interface ViewController : UIViewController
+@property MKPointAnnotation *busStopAnnotation;
+@property NSDictionary *selectedDictionary;
+
 
 @end

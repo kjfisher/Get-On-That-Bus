@@ -21,6 +21,8 @@
 		2E38A9C519365D8800459FCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E38A9A719365D8800459FCB /* UIKit.framework */; };
 		2E38A9CD19365D8800459FCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E38A9CB19365D8800459FCB /* InfoPlist.strings */; };
 		2E38A9CF19365D8800459FCB /* GetOnThatBusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E38A9CE19365D8800459FCB /* GetOnThatBusTests.m */; };
+		2E38A9D919365DFA00459FCB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E38A9D819365DFA00459FCB /* MapKit.framework */; };
+		2E38A9DC19366BAB00459FCB /* BusStopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E38A9DB19366BAB00459FCB /* BusStopDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		2E38A9CA19365D8800459FCB /* GetOnThatBusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetOnThatBusTests-Info.plist"; sourceTree = "<group>"; };
 		2E38A9CC19365D8800459FCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E38A9CE19365D8800459FCB /* GetOnThatBusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetOnThatBusTests.m; sourceTree = "<group>"; };
+		2E38A9D819365DFA00459FCB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2E38A9DA19366BAB00459FCB /* BusStopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopDetailViewController.h; sourceTree = "<group>"; };
+		2E38A9DB19366BAB00459FCB /* BusStopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E38A9D919365DFA00459FCB /* MapKit.framework in Frameworks */,
 				2E38A9A619365D8800459FCB /* CoreGraphics.framework in Frameworks */,
 				2E38A9A819365D8800459FCB /* UIKit.framework in Frameworks */,
 				2E38A9A419365D8800459FCB /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		2E38A9A219365D8800459FCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E38A9D819365DFA00459FCB /* MapKit.framework */,
 				2E38A9A319365D8800459FCB /* Foundation.framework */,
 				2E38A9A519365D8800459FCB /* CoreGraphics.framework */,
 				2E38A9A719365D8800459FCB /* UIKit.framework */,
@@ -115,6 +122,8 @@
 				2E38A9B219365D8800459FCB /* AppDelegate.h */,
 				2E38A9B319365D8800459FCB /* AppDelegate.m */,
 				2E38A9B519365D8800459FCB /* Main.storyboard */,
+				2E38A9DA19366BAB00459FCB /* BusStopDetailViewController.h */,
+				2E38A9DB19366BAB00459FCB /* BusStopDetailViewController.m */,
 				2E38A9B819365D8800459FCB /* ViewController.h */,
 				2E38A9B919365D8800459FCB /* ViewController.m */,
 				2E38A9BB19365D8800459FCB /* Images.xcassets */,
@@ -251,6 +260,7 @@
 			files = (
 				2E38A9BA19365D8800459FCB /* ViewController.m in Sources */,
 				2E38A9B419365D8800459FCB /* AppDelegate.m in Sources */,
+				2E38A9DC19366BAB00459FCB /* BusStopDetailViewController.m in Sources */,
 				2E38A9B019365D8800459FCB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
