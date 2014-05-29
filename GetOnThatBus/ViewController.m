@@ -33,7 +33,6 @@
         self.busStopArray = [dictionary objectForKey:@"row"];
         //NSLog(@"%@", self.busStopArray);
         [self busStopPinsCreator];
-
     }];
 }
 
@@ -66,19 +65,24 @@
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-    NSLog(@"%@", view.title);
-    [self performSegueWithIdentifier:@"detailSegue" sender:view];
+    //NSLog(@"%@", view.title);
+
+    NSArray *selectedArray = [[NSArray alloc] initWithArray:[self.mapView selectedAnnotations]];
+    MKPointAnnotation *selectedPin = [selectedArray objectAtIndex:0];
+    for (NSDictionary *dictionary in self.busStopArray)
+    {
+        if ([dictionary[@"cta_stop_name"] isEqualToString:selectedPin.title])
+             {
+                 self.selectedDictionary = dictionary;
+             }
+     }
+     [self performSegueWithIdentifier:@"detailSegue" sender:view];
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(MKPinAnnotationView *)selectedPin
 {
-    BusStopDetailViewController *detailVC = [[BusStopDetailViewController alloc] init];
+    BusStopDetailViewController *detailVC = segue.destinationViewController;
     detailVC.passedDictionary = self.selectedDictionary;
-
 }
-
-
-
-
 
 @end
